@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+/*************Base*****************/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/*************Variáveis************/
+:root {
+    --ff-nunito: 'Nunito', sans-serif;
+    --color-gelo: #F5F5F5;
+    --color-rosa1: #F2D5E3;
+    --color-rosa2: #F2C2D8;
+    --color-rosa3: #F2A7CA;
+    --color-rosa4: #F26D85;
+    --color-rosa5: #F23D91;
+}
+
+/*************Principal************/
+body {
+    background-color: var(--color-gelo);
+    margin: 0px;
+    font-family: var(--ff-nunito);
+}
+html {
+    scroll-behavior: smooth;
+}
+/*************Menu*****************/
+header {
+    background-color: var(--color-rosa1);
+}
+.menu__lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--color-rosa4);
+}
+.espaco {
+    margin-right: 15px;
+}
+.link  {
+    text-decoration: none;
+    color: var(--color-rosa4);
+}
+.link:hover {
+    color: var(--color-rosa5);
+}
+
+/*************Conteúdo**************/
+.apresentacao {
+    text-align: center;
+    max-width: 960px;
+    margin: auto;
+}
+h1 {
+    font-weight: bold;
+    font-size: 3.2rem;
+}
+hr {
+    border: none;
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-rosa5);
+    margin: auto;
+}
+.conteudo {
+    text-align: center;
+    max-width: 960px;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+h2 {
+    font-weight: normal;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.exibicao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+.q1 {
+    margin: 5px auto;
+    text-align: center;
+    border: solid 1px black;
+}
+img {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+}
+.quemsou {
+    margin-top: 50px;
+}
+.sobre {
+    background-color: var(--color-rosa5);
+    margin: auto;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.sobre__conif {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sobretexto {
+    max-width: 600px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.imagem {
+    text-align: center;
+    margin: auto;
+}
+.infp {
+    font-size: 1.5rem;
+    color: var(--color-gelo);
+    text-align: justify;
+    font-weight: 300;
+}
+.contato {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: justify;
+    padding: 15px;
+}
+footer {
+    background-color: black;
+    margin: 0;
+    height: 30px;
+    align-items: center;
+}
+.rodape {
+    color: white;
+    margin: 0;
+    font-weight: 200;
+    text-align: center;
+    align-items: center;
+    padding-top: 4px;
+}
